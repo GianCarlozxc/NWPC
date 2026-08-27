@@ -3,7 +3,7 @@ import {
   Search, Menu, X, ChevronDown, Award, Briefcase, 
   Layers, Phone, HelpCircle, FileSpreadsheet, 
   ExternalLink, Building2, UserCheck, ShieldCheck, 
-  Users, BookOpen, Landmark
+  Users, BookOpen, Landmark, Lock
 } from 'lucide-react';
 
 export function Navbar({ 
@@ -12,6 +12,7 @@ export function Navbar({
   onOpenTraining, 
   onNavigateTo,
   onOpenAgencies,
+  onOpenAdmin,
   currentPage = 'home'
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -82,6 +83,18 @@ export function Navbar({
               <Award className="w-3.5 h-3.5" />
               Request Training
             </button>
+
+            {/* Admin Console Action */}
+            {onOpenAdmin && (
+              <button
+                onClick={onOpenAdmin}
+                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 bg-slate-800 hover:bg-slate-900 text-amber-300 rounded-lg text-xs font-bold border border-amber-500/40 shadow-sm transition"
+                title="Admin Management Console"
+              >
+                <Lock className="w-3.5 h-3.5 text-amber-400" />
+                Admin
+              </button>
+            )}
 
             {/* Mobile Hamburger Button */}
             <button
@@ -338,6 +351,16 @@ export function Navbar({
             >
               <span>RTWPBs REGIONAL DIRECTORY</span>
               <Building2 className="w-4 h-4 text-amber-400" />
+            </button>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                if (onOpenAdmin) onOpenAdmin();
+              }}
+              className="w-full text-left py-2 px-3 rounded bg-amber-500/20 border border-amber-500/40 hover:bg-amber-500/30 text-amber-300 text-sm font-bold flex items-center justify-between"
+            >
+              <span>ADMIN MANAGEMENT CONSOLE</span>
+              <Lock className="w-4 h-4 text-amber-400" />
             </button>
             <button
               onClick={onOpenTraining}

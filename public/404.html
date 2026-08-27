@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NWPC Portal</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // Redirect 404 paths like /NWPC/admin to /NWPC/#admin
+      var path = window.location.pathname;
+      var repo = '/NWPC';
+      if (path.startsWith(repo)) {
+        var subPath = path.substring(repo.length);
+        if (subPath.startsWith('/')) subPath = subPath.substring(1);
+        if (subPath === 'admin' || subPath.startsWith('admin/')) {
+          window.location.replace(repo + '/#admin');
+        } else if (subPath === 'agencies' || subPath.startsWith('agencies/')) {
+          window.location.replace(repo + '/#agencies');
+        } else if (subPath === 'training-report' || subPath.startsWith('training-report/')) {
+          window.location.replace(repo + '/#training-report');
+        } else {
+          window.location.replace(repo + '/#' + subPath);
+        }
+      } else {
+        window.location.replace('/NWPC/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to NWPC Portal...</p>
+  </body>
+</html>

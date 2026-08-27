@@ -133,6 +133,7 @@ function MainApp() {
       {/* 1. Official Philippine GOVPH Top Bar with PST Clock */}
       <GovHeader
         onOpenAbout={() => setIsAboutOpen(true)}
+        onOpenAdmin={handleOpenAdmin}
       />
 
       {/* 2. Official Portal Navigation Header */}
@@ -142,6 +143,7 @@ function MainApp() {
         onOpenAbout={() => setIsAboutOpen(true)}
         onOpenTraining={() => handleOpenTraining('7s')}
         onOpenAgencies={handleOpenAgencies}
+        onOpenAdmin={handleOpenAdmin}
         onNavigateTo={handleNavigateTo}
       />
 

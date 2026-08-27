@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  ShieldCheck, FileText, Clock 
+  ShieldCheck, FileText, Clock, Lock 
 } from 'lucide-react';
 
-export function GovHeader({ onOpenAbout }) {
+export function GovHeader({ onOpenAbout, onOpenAdmin }) {
   const [pstTime, setPstTime] = useState('');
 
   useEffect(() => {
@@ -68,14 +68,25 @@ export function GovHeader({ onOpenAbout }) {
             </span>
           </div>
 
-          {/* Right: PST Clock */}
-          <div className="flex items-center space-x-2 sm:space-x-4 ml-auto">
+          {/* Right: PST Clock & Admin Portal Shortcut */}
+          <div className="flex items-center space-x-2 sm:space-x-3 ml-auto">
             <div className="flex items-center space-x-1.5 text-slate-300 bg-slate-800 px-2.5 py-0.5 rounded border border-slate-700">
               <Clock className="w-3.5 h-3.5 text-amber-400" />
               <span className="font-mono text-[11px] font-medium tracking-tight">
-                Philippine Standard Time (PST): {pstTime || 'Loading...'}
+                PST: {pstTime || 'Loading...'}
               </span>
             </div>
+
+            {onOpenAdmin && (
+              <button
+                onClick={onOpenAdmin}
+                className="flex items-center gap-1 text-[11px] font-bold text-amber-300 bg-slate-800 hover:bg-slate-700 px-2.5 py-0.5 rounded border border-amber-500/40 hover:border-amber-400 transition"
+                title="Open NWPC Admin Management Console"
+              >
+                <Lock className="w-3 h-3 text-amber-400" />
+                Admin Portal
+              </button>
+            )}
           </div>
 
         </div>
