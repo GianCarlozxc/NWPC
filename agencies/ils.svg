@@ -1,0 +1,14 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#8A1538" stroke-width="4"/>
+    <circle cx="50" cy="50" r="42" fill="#8A1538"/>
+    <circle cx="50" cy="50" r="34" fill="#FFFFFF"/>
+    {/* Open Book & Lamp of Wisdom / Analytics */}
+    <path d="M32,54 C40,50 48,52 50,55 C52,52 60,50 68,54 L68,36 C60,32 52,34 50,37 C48,34 40,32 32,36 Z" fill="#FDF2F4" stroke="#8A1538" stroke-width="2"/>
+    <line x1="50" y1="37" x2="50" y2="55" stroke="#8A1538" stroke-width="2"/>
+    {/* Growth chart bars above book */}
+    <rect x="38" y="26" width="4" height="8" fill="#8A1538"/>
+    <rect x="44" y="22" width="4" height="12" fill="#F58220"/>
+    <rect x="50" y="18" width="4" height="16" fill="#006837"/>
+    <rect x="56" y="14" width="4" height="20" fill="#0038A8"/>
+    <text x="50" y="85" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#8A1538" text-anchor="middle" letter-spacing="1">ILS</text>
+  </svg>
