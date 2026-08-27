@@ -222,10 +222,10 @@ export function TrainingReportPage({ onBackToAdmin }) {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="flex items-center gap-3.5">
               <img 
-                src="/nwpc-header-logo.png" 
+                src={`${import.meta.env.BASE_URL}nwpc-header-logo.png`} 
                 alt="NWPC DOLE Logo" 
                 className="h-12 w-auto object-contain"
-                onError={(e) => { e.target.src = '/nwpc-logo.png'; e.target.onerror = null; }} 
+                onError={(e) => { e.target.src = `${import.meta.env.BASE_URL}nwpc-logo.png`; e.target.onerror = null; }} 
               />
             </div>
 

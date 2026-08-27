@@ -22,7 +22,7 @@ export function AboutModal({ isOpen, onClose }) {
         {/* Modal Header */}
         <div className="flex items-center gap-3.5 pb-4 border-b border-slate-200">
           <img 
-            src="/nwpc-seal.png" 
+            src={`${import.meta.env.BASE_URL}nwpc-seal.png`} 
             alt="NWPC Seal" 
             className="w-14 h-14 object-contain"
           />

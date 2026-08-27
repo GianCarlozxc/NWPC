@@ -270,7 +270,7 @@ export function AdminDashboard({ onBackToLiveSite }) {
             
             {/* Branding */}
             <div className="flex items-center space-x-3">
-              <img src="/nwpc-seal.png" alt="NWPC Seal" className="w-9 h-9 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}nwpc-seal.png`} alt="NWPC Seal" className="w-9 h-9 object-contain" />
               <div>
                 <div className="font-bold text-white text-sm">
                   NWPC Admin Management Console

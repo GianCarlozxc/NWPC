@@ -42,12 +42,12 @@ export function Navbar({
             title="National Wages and Productivity Commission - Home"
           >
             <img 
-              src="/nwpc-header-logo.png" 
+              src={`${import.meta.env.BASE_URL}nwpc-header-logo.png`} 
               alt="Department of Labor and Employment - National Wages and Productivity Commission" 
               className="h-12 sm:h-14 md:h-16 lg:h-16 w-auto object-contain object-left"
               onError={(e) => {
                 e.target.onerror = null;
-                e.target.src = "/nwpc-logo.png";
+                e.target.src = `${import.meta.env.BASE_URL}nwpc-logo.png`;
               }}
             />
           </div>
@@ -57,7 +57,7 @@ export function Navbar({
             {/* Bagong Pilipinas Logo */}
             <div className="hidden sm:flex items-center pr-1">
               <img 
-                src="/bagong-pilipinas-logo.png" 
+                src={`${import.meta.env.BASE_URL}bagong-pilipinas-logo.png`} 
                 alt="Bagong Pilipinas" 
                 className="h-10 sm:h-12 w-auto object-contain"
               />

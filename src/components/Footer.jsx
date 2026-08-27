@@ -79,7 +79,7 @@ export function Footer({ onNavigateTo, onOpenAbout, onOpenTraining, onOpenAdmin 
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/nwpc-seal.png" 
+                src={`${import.meta.env.BASE_URL}nwpc-seal.png`} 
                 alt="NWPC Official Seal" 
                 className="w-12 h-12 object-contain"
               />
@@ -100,7 +100,7 @@ export function Footer({ onNavigateTo, onOpenAbout, onOpenTraining, onOpenAdmin 
             {/* Official Government Badges in Footer */}
             <div className="flex items-center gap-3 pt-2">
               <img 
-                src="/transparency-seal.png" 
+                src={`${import.meta.env.BASE_URL}transparency-seal.png`} 
                 alt="Transparency Seal" 
                 className="h-10 w-auto object-contain cursor-pointer hover:opacity-90 transition"
                 onClick={onOpenAbout}
@@ -112,14 +112,14 @@ export function Footer({ onNavigateTo, onOpenAbout, onOpenTraining, onOpenAdmin 
                 rel="noopener noreferrer"
               >
                 <img 
-                  src="/foi-logo.png" 
+                  src={`${import.meta.env.BASE_URL}foi-logo.png`} 
                   alt="Freedom of Information" 
                   className="h-10 w-auto object-contain hover:opacity-90 transition"
                   title="Freedom of Information (FOI)"
                 />
               </a>
               <img 
-                src="/bagong-pilipinas-logo.png" 
+                src={`${import.meta.env.BASE_URL}bagong-pilipinas-logo.png`} 
                 alt="Bagong Pilipinas" 
                 className="h-10 w-auto object-contain"
                 title="Bagong Pilipinas"
@@ -207,7 +207,7 @@ export function Footer({ onNavigateTo, onOpenAbout, onOpenTraining, onOpenAdmin 
             </h5>
             <div className="flex items-center gap-3 mb-2">
               <img 
-                src="/gov-seal-footer.png" 
+                src={`${import.meta.env.BASE_URL}gov-seal-footer.png`} 
                 alt="Republic of the Philippines Seal" 
                 className="w-10 h-10 object-contain opacity-80"
               />

@@ -130,12 +130,12 @@ export function AgenciesPage() {
                     {/* Official Agency Logo */}
                     <div className="w-14 h-14 rounded-xl bg-white p-1.5 border border-slate-200 shadow-sm flex items-center justify-center shrink-0">
                       <img
-                        src={agency.logo}
+                        src={agency.logo.startsWith('http') ? agency.logo : `${import.meta.env.BASE_URL}${agency.logo.replace(/^\//, '')}`}
                         alt={`${agency.name} Logo`}
                         className="w-full h-full object-contain"
                         onError={(e) => {
                           e.target.onerror = null;
-                          e.target.src = "/nwpc-seal.png";
+                          e.target.src = `${import.meta.env.BASE_URL}nwpc-seal.png`;
                         }}
                       />
                     </div>
