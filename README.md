@@ -1,6 +1,32 @@
 # National Wages and Productivity Commission (NWPC - DOLE) Official Portal
 
+[![Live Demo](https://img.shields.io/badge/Live_Portal-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://giancarlozxc.github.io/NWPC/)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite_6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 A modern, responsive, accessible recreation of the official **National Wages and Productivity Commission (NWPC)** website (`https://nwpc.dole.gov.ph/`), an attached agency of the Department of Labor and Employment (DOLE), Republic of the Philippines.
+
+---
+
+## 🌐 Live Website
+👉 **[https://giancarlozxc.github.io/NWPC/](https://giancarlozxc.github.io/NWPC/)**
+
+---
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|---|---|
+| **[React 19](https://react.dev/)** | Frontend UI Component Architecture |
+| **[Tailwind CSS](https://tailwindcss.com/)** | Responsive Design, Dark/Light Themes & Government Styling |
+| **[Vite 6](https://vitejs.dev/)** | High-Performance Build Tooling & Fast Refresh |
+| **[Lucide React](https://lucide.dev/)** | Official Iconography Suite |
+| **[jsPDF & AutoTable](https://github.com/parallax/jsPDF)** | Client-side Wage Order & Training PDF Certificate Generation |
+| **[SheetJS (XLSX)](https://sheetjs.com/)** | Minimum Wage Matrix Excel/Spreadsheet Export |
+
+---
 
 ## 🚀 Key Features
 
@@ -12,7 +38,7 @@ A modern, responsive, accessible recreation of the official **National Wages and
 2. **Interactive 17-Region Minimum Wage Matrix**:
    - Real wage order data covering NCR, CAR, Region I to XII, Caraga (XIII), and BARMM.
    - Comprehensive breakdown of Non-Agriculture, Agriculture, Retail/Service, and Kasambahay (Domestic Worker under RA 10361) rates.
-   - Filter by region/keyword, copy wage rate summaries, and simulate directly in the calculator.
+   - Filter by region/keyword, copy wage rate summaries, and export directly to Excel.
 
 3. **Interactive Minimum Wage & Overtime Calculator**:
    - Select region and sector to automatically pull official minimum daily rates.
@@ -36,25 +62,27 @@ A modern, responsive, accessible recreation of the official **National Wages and
 
 ---
 
-## 🛠️ Tech Stack
+## 💻 Local Development
 
-- **React 19**
-- **Vite 6**
-- **Tailwind CSS 3**
-- **Lucide Icons**
+```bash
+# Clone the repository
+git clone https://github.com/GianCarlozxc/NWPC.git
+
+# Navigate into folder
+cd NWPC
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
 
 ---
 
-## 💻 Running the Application
+## 🚢 Production Deployment
 
-### Development Server
 ```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Production Build
-```bash
-npm run build
-npm run preview
+# Build & Deploy directly to GitHub Pages
+npm run deploy
 ```

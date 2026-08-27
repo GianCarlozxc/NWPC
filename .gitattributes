@@ -1,0 +1,8 @@
+# GitHub Linguist language overrides
+# Exclude large mock data arrays from JavaScript stats
+src/data/* linguist-vendored
+
+# Ensure JSX, HTML, and CSS are detected
+*.jsx linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true
