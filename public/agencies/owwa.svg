@@ -1,0 +1,12 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#00529B" stroke-width="4"/>
+    <circle cx="50" cy="50" r="42" fill="#00529B"/>
+    <circle cx="50" cy="50" r="34" fill="#FFFFFF"/>
+    {/* Protective Hands & Globe motif */}
+    <circle cx="50" cy="45" r="13" fill="#E1F0FF" stroke="#00529B" stroke-width="2"/>
+    <ellipse cx="50" cy="45" rx="13" ry="5" fill="none" stroke="#00529B" stroke-width="1.5"/>
+    <line x1="50" y1="32" x2="50" y2="58" stroke="#00529B" stroke-width="1.5"/>
+    {/* Caring Shield hands */}
+    <path d="M30,55 C34,68 50,72 50,72 C50,72 66,68 70,55" fill="none" stroke="#F37023" stroke-width="4" stroke-linecap="round"/>
+    <text x="50" y="85" font-family="Arial, sans-serif" font-size="8" font-weight="900" fill="#00529B" text-anchor="middle" letter-spacing="1">OWWA</text>
+  </svg>

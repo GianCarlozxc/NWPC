@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#0038A8" stroke-width="4"/>
+    <circle cx="50" cy="50" r="42" fill="#0038A8"/>
+    <polygon points="50,16 80,68 20,68" fill="#CE1126" stroke="#FCD116" stroke-width="2"/>
+    <polygon points="50,22 74,64 26,64" fill="#0038A8"/>
+    <circle cx="50" cy="48" r="12" fill="#FCD116"/>
+    <path d="M50,38 L50,58 M40,48 L60,48" stroke="#0038A8" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="50" y="86" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">NWPC - DOLE</text>
+  </svg>
